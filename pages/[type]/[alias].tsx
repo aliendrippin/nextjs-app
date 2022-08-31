@@ -5,7 +5,7 @@ import axios from 'axios';
 import { MenuItem } from '../../interfaces/menu.interface';
 import { TopLevelCategory, TopPageModel } from '../../interfaces/page.interface';
 import { ProductModel } from '../../interfaces/product.interface';
-import { firstLevelMenu } from '../../helpers/helpers';
+import { firstLevelMenu } from '../../helpers/firstLevelMenuHelper';
 import { TopPageComponent } from '../../page-components';
 import { API } from '../../helpers/api';
 import Head from 'next/head';

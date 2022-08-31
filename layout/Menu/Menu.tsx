@@ -5,7 +5,7 @@ import { AppContext } from '../../context/app.context';
 import { FirstLevelMenuItem, PageItem } from '../../interfaces/menu.interface';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { firstLevelMenu } from '../../helpers/helpers';
+import { firstLevelMenu } from '../../helpers/firstLevelMenuHelper';
 import { motion, useReducedMotion } from 'framer-motion';
 
 export const Menu = (): JSX.Element => {
@@ -125,7 +125,7 @@ export const Menu = (): JSX.Element => {
 
     return (
         <nav className={styles.menu} role='navigation'>
-            {announce && <span role="log" className="visualyHidden">{announce == 'opened' ? 'развернуто' : 'свернуто'}</span>}
+            {/* {announce && <span role="log" className="visualyHidden">{announce == 'opened' ? 'развернуто' : 'свернуто'}</span>}*/}
             {buildFirstLevel()}
         </nav>
     );
